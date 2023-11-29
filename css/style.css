@@ -1,0 +1,221 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'K2D', 'sans-serif';
+    font-weight: 100;
+}
+header nav img{
+    width: 200px;
+}
+#active{
+    font-weight: 600;
+    color: rgb(224, 195, 46);
+}
+section{
+    padding: 5rem 60px;
+}
+section > h1{
+    font-size: 36px;
+}
+section > h1, section > h3{
+    color: rgb(31, 70, 118);
+}
+.parent_section{
+    padding: 0 60px;
+    background-image: linear-gradient(30deg, rgb(49, 111, 155),  rgba(0, 0, 0, 0.454)), url('../assets/img/cover1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cover_section header nav ul{
+    position: relative;
+    float: right;
+}
+.cover_section header nav ul li{
+    list-style: none;
+    float: left;
+    margin: 0 30px;
+}
+.cover_section header nav ul li a{
+    
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+}
+.mainDesc{
+    width: 50rem;
+}
+.cover_section > div h1{
+    font-weight: 400;
+    color: white;
+    font-size: 36px;
+}
+.cover_section > div p{
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+}
+.cover_section > div button{
+    position: relative;
+    font-size: 16px;
+    color: rgb(31, 70, 118);
+    height: 50px;
+    width: auto;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color: rgb(245, 219, 87);;
+}
+.flexThree{
+    margin-top: 7rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    display: flex;
+    color: white;
+}
+.stepsThree span{
+    width: auto;
+    padding: 3px;
+    color: rgb(31, 70, 118);
+    height: auto;
+    background-color: white;
+}
+.flexCards{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+}
+.flexCards .card{
+    background-image: linear-gradient(120deg, rgb(4, 75, 126),  rgba(0, 0, 0, 0.106));
+    border-radius: 18px;
+    position: relative;
+    width: 25em;
+    height: 20rem;
+}
+.flexCards .card #adDesc{
+    font-size: 14px;
+    bottom: 2rem;
+}
+.flexCards .card h3{
+    top: 9rem;
+}
+.flexCards .card hr{
+    width: 5rem;
+    bottom: 8rem;
+}
+.flexCards .card h3, .flexCards .card p, .flexCards .card hr{
+    margin:0;
+    left: 1rem;
+    font-size: 22px;
+    color: white;
+    position: absolute;
+}
+.flexCards .card p{
+    font-size: 14px;
+    bottom: 5rem;
+}
+.flexCards .card img{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 23px;
+}
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flexBox{
+    color: rgb(31, 70, 118);
+    font-size: 22px;
+    width: 100%;
+    display: flex;
+    gap: 10rem;
+}
+.first_card{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    gap: 3rem;
+}
+.flexBox hr{
+    width: 20rem;
+    margin:0;
+}
+.flexBox .first_card img{
+    height: 30rem;
+    width: 30rem;
+    display: inline-block;
+}
+.flexBox h3 i, .childFlex h3 i{
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #ffd43b;
+}
+.childFlex{
+    display: flex;
+    gap: 3rem;
+}
+#centeredSection{
+    text-align: center;
+}
+.galleryTable{
+    position: relative;
+    text-align: start;
+    justify-content: space-between;
+    display: grid;
+    gap: 3rem;
+    grid: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 20rem);
+}
+.galleryTable h3, .galleryTable p, .galleryTable hr{
+    left: 1rem;
+    color: white;
+    font-size: 22px;
+    position: absolute;
+}
+.galleryTable .card{
+    position: relative;
+}
+.galleryTable .card h3{
+    bottom: 7rem;
+}
+.galleryTable .card p{
+    font-size: 22px;
+    bottom: 3rem;
+}
+.galleryTable .card hr{
+    font-size: 22px;
+    bottom: 6rem;
+    color: white;
+    width: 5rem;
+}
+.galleryTable .b{
+    grid-column: span 2;
+}
+.galleryTable .card img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width: 1270px) {
+    .flexCards{
+        gap: 2rem;
+    }
+    .flexBox .first_card {
+        flex-direction: column-reverse;
+    }
+    .flexBox .reverse{
+        flex-direction: column;
+    }
+    .flexBox .first_card img{
+        width: 100%;
+        object-fit: cover;
+    }
+  }
