@@ -27,6 +27,9 @@ section > h1, section > h3{
     background-repeat: no-repeat;
     background-position: center;
 }
+.tourParent{
+    background-image: linear-gradient(30deg, rgb(49, 111, 155),  rgba(0, 0, 0, 0.454)), url('../assets/img/cover2.jpg');
+}
 .cover_section header nav ul{
     position: relative;
     float: right;
@@ -269,6 +272,14 @@ input{
 .filter select option{
     height: 20rem;
     padding: 10px;
+}
+.flexSection{
+    gap: 2rem;
+}
+.flexSection img{
+    margin-top: 2rem;
+    width: 20rem;
+    border: 4px solid #ffd43b;
 }
 @media screen and (max-width: 1270px) {
     .flexCards{
