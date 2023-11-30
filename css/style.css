@@ -224,6 +224,7 @@ footer{
     font-size: 15px;
     justify-content: space-around;
 }
+
 footer .companyInfo{
     width: 20rem;
 }
@@ -237,6 +238,10 @@ footer nav ul li, footer .social li{
     float: left;
     list-style: none;
     margin: 0 10px;
+}
+footer nav ul a {
+    text-decoration: none;
+    color: white
 }
 footer nav ul li a, footer .social li a{
     font-size: 15px;
@@ -309,6 +314,7 @@ input{
     margin: 0;
 }
 .blogFlex .blogCard img{
+    border-radius: 18px;
     margin-right: 3rem;
     width: 20rem;
     height: 20rem;
@@ -318,6 +324,66 @@ input{
     position: absolute;
     bottom: 0;
     right: 0;
+
+}
+.mainDesc div{
+    display: flex;
+    flex-direction: column;
+}
+.mainDesc div p{
+    font-size: 22px;
+}
+.mainDesc div p i{
+    font-size: 30px;
+}
+.contactForm{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    gap: 3rem;
+    padding: 5rem 60px;
+    background-image: linear-gradient(30deg, rgb(49, 111, 155),  rgba(0, 0, 0, 0.454)), url('../assets/img/blog1.jpg');
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contactForm .fillForm{
+    width: 30rem;
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contactForm .fillForm button{
+    width: 20rem;
+    height: 3rem;
+    background-color: #ffd43b;
+    border: none;
+    border-radius: 18px;
+    font-size: 22px;
+    color: #004258;
+    font-weight: 600;
+}
+.contactForm .fillForm input{
+    width: 20rem;
+    height: 3rem;
+}
+.contactForm .fillForm textarea{
+    border-radius: 18px;
+    width: 20rem;
+    height: 20rem;
+}
+.contactForm .map{
+    width: 30rem;
+    height: 30rem;
+    background-image: url('../assets/img/map.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 10px solid #ffd43b;
 }
 @media screen and (max-width: 1270px) {
     .flexCards{
