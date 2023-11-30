@@ -184,6 +184,10 @@ section{
     background-image: linear-gradient(30deg, rgb(49, 111, 155),  rgba(0, 0, 0, 0.454));
     position: relative;
 }
+.galleryTable .card:hover{
+    background-color: linear-gradient(30deg, rgb(0, 0, 0, 0) rgba(0, 0, 0, 0)454);
+    transition: 10ms;
+}
 .galleryTable .card h3{
     bottom: 7rem;
 }
@@ -206,6 +210,65 @@ section{
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+footer{
+    padding-top: 4rem;
+    align-items: center;
+    background-color: #004158;
+    width: 100%;
+    display: flex;
+    color: white;
+    font-size: 15px;
+    justify-content: space-around;
+}
+footer .companyInfo{
+    width: 20rem;
+}
+footer .social nav ul{
+    margin: 0;
+    left: 0;
+    position: absolute;
+}
+
+footer nav ul li, footer .social li{
+    float: left;
+    list-style: none;
+    margin: 0 10px;
+}
+footer nav ul li a, footer .social li a{
+    font-size: 15px;
+    text-decoration: none;
+}
+#desired{
+    display: inline;
+}
+.searchInput{
+    float: right;
+    width: 20rem;
+    padding: 10px;
+}
+.filter{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+input{
+    border: none;
+    filter: drop-shadow(2px 2px 2px #979797);
+    border-radius: 12px;
+}
+.filter select{
+    border-radius: 12px;
+    width: 10rem;
+    padding: 10px;
+    border: none;
+    filter: drop-shadow(2px 2px 2px #979797);
+}
+.filter select option{
+    height: 20rem;
+    padding: 10px;
 }
 @media screen and (max-width: 1270px) {
     .flexCards{
